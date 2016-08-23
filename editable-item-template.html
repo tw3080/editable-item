@@ -1,4 +1,9 @@
-<div ng-transclude ng-class="{ editing: isEditable }" contenteditable="{{ isEditable }}">
+<!-- Allows each paragraph to be edited when contenteditable is set to 'true' -->
+<div ng-transclude
+    ng-class="{ editing: isEditable }"
+    contenteditable="{{ isEditable }}">
 </div>
+<!-- Edit button -->
 <button class="btn" ng-hide="isEditable" ng-click="editContent()">Edit</button>
-<button class="btn" ng-hide="!isEditable" ng-click="submitContent()">Submit</button>
+<!-- Submit button -->
+<button class="btn" ng-hide="!isEditable" ng-click="saveContent()">Save</button>
