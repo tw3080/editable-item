@@ -9,6 +9,9 @@ app.directive('makeEditable', function() {
             $scope.editContent = function() {
                 $scope.isEditable = true;
             };
+            $scope.submitContent = function() {
+                $scope.isEditable = false;
+            };
         }
     };
 });
