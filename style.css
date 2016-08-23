@@ -1,0 +1,32 @@
+body {
+    font-family: 'Lato', sans-serif;
+    color: #726769;
+}
+
+/* Main content wrapper */
+.main-container {
+    width: 35rem;
+    margin: 10rem auto;
+    text-align: center;
+}
+
+/* Styles for text while it is being edited */
+.editing {
+    color: #D89047;
+}
+
+/* Buttons */
+.btn {
+    width: 5rem;
+    padding: 0.25rem;
+    text-transform: uppercase;
+    border: 1px solid #C9BD50;
+    background-color: #fff;
+    color: #C9BD50;
+}
+
+.btn:hover {
+    background-color: #C9BD50;
+    color: #fff;
+    cursor: pointer;
+}
