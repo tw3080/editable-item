@@ -4,6 +4,8 @@ app.directive('makeEditable', function() {
     return {
         restrict: 'A',
         templateUrl: 'editable-item-template.html',
+        transclude: true,
+        scope: true,
         link: function($scope, element, attrs) {
             $scope.isEditable = false;
             $scope.editContent = function() {
